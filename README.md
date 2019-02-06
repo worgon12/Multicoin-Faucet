@@ -11,6 +11,15 @@ Before to start using this Guide you must have a full synced and running Wallet.
 `sudo apt-get install php`
 ___
 
+**_Install SSL Certificates_**
+
+If you want to add a SSL-certificate I recommend you using certbot: https://certbot.eff.org/
+You should install the certificate before the Faucet installation. Just follow the installation guides on the website.
+
+
+
+___
+
 **_Install and configure MySQL_**
 
 `sudo apt-get install mysql-server`
