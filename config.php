@@ -38,15 +38,15 @@ $config = array(
 	// These are the settings you put into e.g. dogecoin.conf. They allow the faucet to interact with your wallet
     "rpc_user" => "rpcuser",
 	"rpc_password" => "rpcpassword",
-	"rpc_host" => "rpchost",
+	"rpc_host" => "rpchost",	//If the Wallet runs on the local server the host is probably localhost
 	"rpc_port" => "rpcport",
 
 	// MySQL settings:
     "mysql_user" => "db_user",
 	"mysql_password" => "db_password",
 	"mysql_host" => "localhost",
-	"mysql_database" => "db_name", // faucet database name
-	"mysql_table_prefix" => "sf_", // table prefix to use
+	"mysql_database" => "faucet", // faucet database name
+	"mysql_table_prefix" => "sf_", // table prefix to use , normally there is no need to change it
 
 	// Coin values:
 	"minimum_payout" => 1, // minimum coins to be awarded
@@ -58,7 +58,7 @@ $config = array(
     // Payment system:
 	"stage_payments" => true, // stage payments in the database, to be executed later
 	"stage_payment_account_name" => "", // account name to send transactions with, needs to be valid // you also can leave it empty
-	"staged_payment_threshold" => 25, // staged payment threshold, all staged payments are executed when this number is reached
+	"staged_payment_threshold" => 10, // staged payment threshold, all staged payments are executed when this number is reached
 	"staged_payment_cron_only" => false, // ignore the stage_amount counter, only execute staged payments when the cron script is called
     
 	// this option has 3 possible values: "ip_address", "coin_address", and "both". It defines what to check for when a user enters a coin address in order to decide whether or not to award coins to this user.
@@ -69,9 +69,9 @@ $config = array(
 
 	"use_captcha" => true, // require the user to enter a captcha
 
-	"captcha" => "recaptcha", // valid options: recaptcha, recaptcha2, solvemedia
+	"captcha" => "recaptcha2", // valid options: recaptcha2, solvemedia
 
-	"captcha_https" => false, // use https (only for recaptcha2) valid options: true, false
+	"captcha_https" => true, // use https (only for recaptcha2) valid options: true, false
 
 	// enter your private and public reCAPTCHA key here:
 	"captcha_config" => array(
