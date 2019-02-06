@@ -91,7 +91,7 @@ $config = array(
 	"proxy_filter_use_faucet_database" => false, // whether the proxy filter should use the faucet database connection or not. (if set to false, the proxy filter will connect to the database set in ./lib/proxy_filter/config.php)
     
     // promo codes:
-	"use_promo_codes" => true, // accept promo codes
+	"use_promo_codes" => false, // accept promo codes
 
     
 	// if the wallet is encrypted, enter the PASSPHRASE here. Leave it blank otherwise!
