@@ -15,6 +15,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
 `sudo a2enmod php7.0`
 
 `rm /var/www/html/index.html`
+
+`service apache2 restart`
 ___
 
 **_Install SSL Certificates_**
