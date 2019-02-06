@@ -83,4 +83,10 @@ Put a favicon.ico in the img folder
 
 When using the basic template you should add a Coinname.png in the img folder. Note that the large and lower case of the Coinname.png should match with the Coinname set in the Faucet config.
 
+If you set "stage_payments" => true and "staged_payment_cron_only" => true , you will need to create a cronjob for /cron/run.php and /lib/proxy_filter/cron/tor.php
+
+If you set "stage_payments" => true and "staged_payment_cron_only" => false you just have to create a cronjob for /lib/proxy_filter/cron/tor.php
+
+IMPORTANT: The tor proxy list gets downloaded from https://www.dan.me.uk/torlist/ - He only allows to download once a hour! Please note that you will be banned from the service if you exceed this quota! Create a .htaccess and .htpasswd for the cronjob folder and /lib/proxy_filter/cron/ to secure them.
+
 	
