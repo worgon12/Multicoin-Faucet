@@ -13,6 +13,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
 `apt-get install libapache2-mod-php7.0`
 
 `sudo a2enmod php7.0`
+
+`rm /var/www/html/index.html`
 ___
 
 **_Install SSL Certificates_**
