@@ -9,6 +9,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
 `sudo apt-get install apache2`
 
 `sudo apt-get install php`
+`apt-get install libapache2-mod-php7.0`
+`sudo a2enmod php7.0`
 ___
 
 **_Install SSL Certificates_**
@@ -33,7 +35,7 @@ The first step to configure mysql for production mode is to run
 
 Then, when asked, enter your root password. 
 
-Further I would deny the first two questions (n) and accept the remaining questions (y)#
+Further I would deny the first two questions (n) and accept the remaining questions (y)
 
 
 ___
