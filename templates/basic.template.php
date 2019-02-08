@@ -35,9 +35,11 @@
                 <div class="col-12 col-md-4 col-lg-6 col-xl-8">                   
                     <div class="row">
                         <div class="col-12 text-center mb-2">
+			  <a href=".">
                             <img src="./img/{{COINNAME}}.png" class="img-fluid rounded float-left" style="height: 75px; width: auto;">
                             <img src="./img/{{COINNAME}}.png" class="img-fluid rounded float-right" style="height: 75px; width: auto;">
-                            <h1>{{TITLE}}</h1>
+			   </a>
+			    <h1>{{TITLE}}</h1>
                         </div>
                     </div>
                     <?php
