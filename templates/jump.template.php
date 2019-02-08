@@ -47,7 +47,7 @@
         <h3 class="panel-title">Advertisements</h3>
     </div>
     <div class="panel-body">
-        {{ADS}}
+	{{AD-TOP}}
     </div>
 </div>
 <div class="panel panel-default">
