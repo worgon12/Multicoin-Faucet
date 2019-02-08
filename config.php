@@ -32,7 +32,7 @@ SOFTWARE.
 $config = array(
     
     // e.g. Dogecoin
-    "coinname" => "jumpcoin",
+    "coinname" => "Jumpcoin",
     
 	// RPC settings:
 	// These are the settings you put into e.g. dogecoin.conf. They allow the faucet to interact with your wallet
