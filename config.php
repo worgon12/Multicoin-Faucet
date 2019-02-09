@@ -49,8 +49,8 @@ $config = array(
 	"mysql_table_prefix" => "sf_", // table prefix to use , normally there is no need to change it
 
 	// Coin values:
-	"minimum_payout" => 1, // minimum coins to be awarded
-	"maximum_payout" => 6, // maximum coins to be awarded
+	"minimum_payout" => 1, // minimum coins to be awarded, if value below 1 use a . and not a , (example: 0.5 and NOT 0,5)
+	"maximum_payout" => 6, // maximum coins to be awarded, if value below 1 use a . and not a , (example: 0.5 and NOT 0,5)
 	"payout_threshold" => 10, // payout threshold, if the faucet contains less coins than this, display the 'dry_faucet' message
 	"payout_interval" => "1h", // payout interval, the wait time for a user between payouts. Type any numerical value with either a "m" (minutes), "h" (hours), or "d" (days), attached. Examples: 50m for a 50 minute delay, 7h for a 7 hour delay, etc.
 
