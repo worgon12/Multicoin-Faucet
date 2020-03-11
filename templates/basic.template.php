@@ -36,8 +36,9 @@
                     <div class="row">
                         <div class="col-12 text-center mb-2">
 			  <a href=".">
-                            <img src="./img/{{COINNAME}}.png" class="img-fluid rounded float-left" style="height: 75px; width: auto;">
-                            <img src="./img/{{COINNAME}}.png" class="img-fluid rounded float-right" style="height: 75px; width: auto;">
+                            <img src="./img/{{YOURGif}}.gif" class="img-fluid rounded float-left" style="height: 150px; width: auto;">
+                            <img src="./img/{{COINNAME}}.png" class="img-fluid rounded float-center" style="height: 170px; width: 500px;">
+		            <img src="./img/{{YOURGIF}}.gif" class="img-fluid rounded float-right" style="height: 150px; width: auto;">
 			   </a>
 			    <h1>{{TITLE}}</h1>
                         </div>
@@ -162,7 +163,8 @@
                                 <div class="card-body py-1">
                                     <code>{{DONATION_ADDRESS}}</code>
                                 </div>
-                            </div>
+                                <center><input type='button' onclick='location.reload();' value='Reload this page!'/></button></center>
+				</div>
                         </div>
                     </div>
                     <?php
