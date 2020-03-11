@@ -201,22 +201,22 @@ Before to start using this Guide you must have a full synced and running Wallet.
    
    `sudo nano config.php`
    
-    edit the config, or enter the data of the crypto wallet to be installed...
+   edit the config, or enter the data of the crypto wallet to be installed...
   
  
 
 
 
-12. Install Crypto Wallet in my case Bitradio
+12.Install Crypto Wallet in my case Bitradio
     
-    `wget https://github.com/thebitradio/Bitradio/releases/download/1.1.0.10/arm-linux-gnueabihf.zip`
+   `wget https://github.com/thebitradio/Bitradio/releases/download/1.1.0.10/arm-linux-gnueabihf.zip`
     
-    unpack the bitradio-qt in the bin folder
+   unpack the bitradio-qt in the bin folder
     
-    For example, let the Raspberry boot into desktop mode, start bitradio.qt and let it sync. and with
+   For example, let the Raspberry boot into desktop mode, start bitradio.qt and let it sync. and with
     
-    `sudo nano /home/pi/.bitradio/bitradio.conf`
-    edit the bitradio.conf file
+   `sudo nano /home/pi/.bitradio/bitradio.conf`
+   edit the bitradio.conf file
     
 
    to access the faucet from the wallet
