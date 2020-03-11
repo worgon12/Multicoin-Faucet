@@ -5,6 +5,7 @@
 Before to start using this Guide you must have a full synced and running Wallet.
 
 1.Create your own home for www-data or phpMyAdmin
+
   `sudo mkdir /home/www-data`
   `sudo mkdir /home/www-data/www`
 
@@ -57,37 +58,37 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
   Adjust the configuration as follows
   
-  `server { `
-          `listen 80 default_server;`
-	  `listen [::]:80 default_server;` 
+  server { 
+          listen 80 default_server;
+	  listen [::]:80 default_server; 
  
-          `root /var/www/html;`
-	  `index index.php index.html index.htm index.nginx-debian.html;` 
+          root /var/www/html;
+	  index index.php index.html index.htm index.nginx-debian.html;
  
-          `server_name _;` 
+          server_name _;
  
-           `location / {`
-	            `try_files $uri $uri/ =404;` 
+           location / {
+	            try_files $uri $uri/ =404; 
  
-                    `location ~ \.php$ {`
-		            `include snippets/fastcgi-php.conf;`
-			    `fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;`
-	            `}`  
-           `}` 
+                    location ~ \.php$ {
+		            include snippets/fastcgi-php.conf;
+			    fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+	            }  
+           } 
  
-           `location /phpMyAdmin {`
-	            `root /home/www-data/www;`
-		    `index index.php;`
-		    `try_files $uri $uri/ =404;` 
+           location /phpMyAdmin {
+	            root /home/www-data/www;
+		    index index.php;
+		    try_files $uri $uri/ =404;
  
-                    `location ~ /phpMyAdmin/(.+\.php)$ {`
-		             `include snippets/fastcgi-php.conf;`
-			     `fastcgi_param SCRIPT_FILENAME`
-			     `$document_root$fastcgi_script_name;`
-			     `fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;`
-	            `}`
-           `}
-  `}`
+                    location ~ /phpMyAdmin/(.+\.php)$ {
+		             include snippets/fastcgi-php.conf;
+			     fastcgi_param SCRIPT_FILENAME
+			     $document_root$fastcgi_script_name;
+			     fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+	            }
+           }
+  }
   
   
   If you use a DynDNS service, the underscore at server_name _; replace with the domain name.
