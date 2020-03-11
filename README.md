@@ -6,6 +6,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
 
 
 
+
+
 1.Create your own home for www-data or phpMyAdmin
 
   `sudo mkdir /home/www-data`
