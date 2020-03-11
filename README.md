@@ -10,6 +10,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
   `sudo mkdir /home/www-data/www`
 
+
+
 2.Download, unzip and rename phpMyadmin
 
   `cd /home/www-data/www`
@@ -21,15 +23,21 @@ Before to start using this Guide you must have a full synced and running Wallet.
   `sudo mv phpMyAdmin-4.7.7-all-languages phpMyAdmin` 
   
 
+
+
 3.Create .config.inc.php
 
   `sudo cp /home/www-data/www/phpMyAdmin/config.sample.inc.php /home/wwwdata/www/phpMyAdmin/config.inc.php`
+
+
 
 4.Adjust rights
 
  `sudo chown -R www-data:www-data /home/www-data`
  
   Now the phpMyAdmin files should be in the following directory: / home / wwwdata / www / phpMyAdmin
+
+
 
 5.Edit .config.inc.php
 
@@ -39,10 +47,14 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
   `$cfg['blowfish_secret'] = ''; <--- between the '' you have to enter a few random characters (maximum 32).`
   
+
+
 6.Install .Webserver, PHP (+ all necessary modules) and MySQL
 
   `sudo apt-get install nginx php7.0-fpm php7.0-mysql php7.0-mbstring mysqlserver`
   
+
+
 7.Edit database with..
 
   `sudo -i `
@@ -73,6 +85,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
   `exit`
   
+
+
 8.Save .nginx (web server) configuration
 
   `sudo cp /etc/nginx/sites-available/default /etc/nginx/sitesavailable/default.backup`
@@ -140,6 +154,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
   or just leave it there. As soon as you create an index.php, index.htm or index.html this file is automatically used as an index.
   
 
+
+
 9.Download the Faucet Script 
 
   `cd /var/www/html`
@@ -150,6 +166,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
   
   
+
+
 10. Create database for the user
 
    `mysql -u root -p`
@@ -175,6 +193,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
    `\q `
   
   
+
+
 11.Next step
 
    under var / www / html / faucet with
@@ -184,6 +204,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
    edit the config, or enter the data of the crypto wallet to be installed...
   
  
+
+
 
 12. Install Crypto Wallet in my case Bitradio
     
