@@ -195,9 +195,10 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
 
 
+
 11. Next step
 
-    under var / www / html / faucet with
+   under var / www / html / faucet with
    
    `sudo nano config.php`
    
