@@ -195,13 +195,13 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
 
 
-11.Next step
+11. Next step
 
-   under var / www / html / faucet with
+    under var / www / html / faucet with
    
    `sudo nano config.php`
    
-   edit the config, or enter the data of the crypto wallet to be installed...
+    edit the config, or enter the data of the crypto wallet to be installed...
   
  
 
