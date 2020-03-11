@@ -12,6 +12,9 @@ Before to start using this Guide you must have a full synced and running Wallet.
 
 
 
+
+
+
 2.Download, unzip and rename phpMyadmin
 
   `cd /home/www-data/www`
