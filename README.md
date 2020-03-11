@@ -4,16 +4,15 @@
 
 Before to start using this Guide you must have a full synced and running Wallet.
 
+
+
 1.Create your own home for www-data or phpMyAdmin
 
   `sudo mkdir /home/www-data`
   
   `sudo mkdir /home/www-data/www`
-
-
-
-
-
+  
+  
 
 2.Download, unzip and rename phpMyadmin
 
@@ -25,9 +24,8 @@ Before to start using this Guide you must have a full synced and running Wallet.
   
   `sudo mv phpMyAdmin-4.7.7-all-languages phpMyAdmin` 
   
-
-
-
+  
+  
 3.Create .config.inc.php
 
   `sudo cp /home/www-data/www/phpMyAdmin/config.sample.inc.php /home/wwwdata/www/phpMyAdmin/config.inc.php`
